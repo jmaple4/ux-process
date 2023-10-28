@@ -1,0 +1,290 @@
+/* custom styles */
+html, body {
+  background-color: #1e1e1e;
+  font-family: "Amazon Ember", "Open Sans", sans-serif;
+}
+
+.header {
+  max-width: 1105px;
+  margin: 0 auto;
+}
+.header h1 {
+  color: rgba(255, 255, 255, 0.6509803922);
+  /* Display/Large light */
+  font-family: Amazon Ember;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 56px; /* 127.273% */
+  margin: 40px 0 0 40px;
+}
+
+.mainContentUXProcess {
+  position: relative;
+}
+
+.contentWidthSimulation {
+  max-width: 1105px;
+  margin: 0 auto;
+}
+
+.underline {
+  width: 2px;
+  background-color: rgba(81, 81, 81, 0.7);
+  position: absolute;
+  display: block;
+  height: 100%;
+  top: 0;
+  left: 85px;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.uxp {
+  background: #000;
+  color: #FFF;
+  padding: 50px 70px;
+  border-radius: 40px;
+  margin: 40px 40px 60px 40px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+.uxp::before {
+  content: "";
+  width: 2px;
+  height: 35px;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 45px;
+  right: 0;
+  bottom: 0;
+}
+.uxp::after {
+  content: "";
+  width: 2px;
+  position: absolute;
+  display: block;
+  top: 115px;
+  left: 45px;
+  right: 0;
+  bottom: 0;
+  flex: 1 1 auto;
+}
+.uxp h2 {
+  color: #FFF;
+  font-family: Amazon Ember;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 36px;
+  max-width: 600px;
+  background-position: 0px 0px;
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  padding-left: 60px;
+  margin-left: -60px;
+  line-height: 50px;
+}
+.uxp h3 {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Amazon Ember;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  max-width: 600px;
+}
+.uxp h4 {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Amazon Ember;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+.uxp .key {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Amazon Ember;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 0;
+  max-width: 600px;
+}
+.uxp .tasks {
+  padding-left: 0;
+  margin: 20px 0 0 0;
+}
+.uxp .tasks li {
+  list-style: none;
+  padding-left: 30px;
+  background-position: 0px 0px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  line-height: 20px;
+  margin-bottom: 15px;
+  max-width: 600px;
+}
+.uxp .tasks li:last-child {
+  margin-bottom: 0px;
+}
+.uxp .tasks li.task {
+  background-image: url(../img/icons/check-circle.svg);
+}
+.uxp .tasks li.design {
+  background-image: url(../img/icons/grid-1x2.svg);
+}
+.uxp .tasks li.research {
+  background-image: url(../img/icons/search.svg);
+}
+.uxp .tasks li.meeting {
+  background-image: url(../img/icons/calendar3.svg);
+}
+.uxp .tasks li.document {
+  background-image: url(../img/icons/file-earmark.svg);
+}
+.uxp .tasks li.dev {
+  background-image: url(../img/icons/code-slash.svg);
+}
+.uxp .tasks li.milestone {
+  background-image: url(../img/icons/trophy-fill.svg);
+}
+
+#uxpCfeedback {
+  background-image: url(../img/bg/bg-data-stream.jpg);
+  background-repeat: no-repeat;
+  background-position: 56% 75%;
+}
+#uxpCfeedback .emphasis {
+  color: #F86919;
+}
+#uxpCfeedback h2 {
+  background-image: url(../img/icons/headers/customer-feedback.svg);
+}
+#uxpCfeedback::before {
+  content: "";
+  background: none;
+}
+#uxpCfeedback::after {
+  content: "";
+  background-image: linear-gradient(0deg, rgba(81, 81, 81, 0.7), #F86919);
+}
+
+#uxpOrganize {
+  background-image: url(../img/bg/bg-study.jpg);
+  background-size: 2184px 816px;
+  background-position: 36% 38%;
+  background-repeat: no-repeat;
+}
+#uxpOrganize .emphasis {
+  color: #63A8FF;
+}
+#uxpOrganize h2 {
+  background-image: url(../img/icons/headers/organize.svg);
+}
+#uxpOrganize::before {
+  content: "";
+  background-image: linear-gradient(180deg, rgba(81, 81, 81, 0.7), #07EBF9);
+}
+#uxpOrganize::after {
+  content: "";
+  background-image: linear-gradient(0deg, rgba(81, 81, 81, 0.7), #07EBF9);
+}
+
+#uxpDiscovery {
+  background-image: url(../img/bg/bg-space-2.jpg);
+  background-repeat: no-repeat;
+  background-position: 3% 28%;
+  background-size: 2000px 1121px;
+}
+#uxpDiscovery .emphasis {
+  color: #63A8FF;
+}
+#uxpDiscovery h2 {
+  background-image: url(../img/icons/headers/discover.svg);
+}
+#uxpDiscovery::before {
+  content: "";
+  background-image: linear-gradient(180deg, rgba(81, 81, 81, 0.7), #63A8FF);
+}
+#uxpDiscovery::after {
+  content: "";
+  background-image: linear-gradient(0deg, rgba(81, 81, 81, 0.7), #63A8FF);
+}
+
+#uxpDesign {
+  background-image: url(../img/bg/bg-canyon.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 94%;
+  background-size: 1874px 700px;
+}
+#uxpDesign .emphasis {
+  color: #F070FC;
+}
+#uxpDesign h2 {
+  background-image: url(../img/icons/headers/design.svg);
+}
+#uxpDesign::before {
+  content: "";
+  background-image: linear-gradient(180deg, rgba(81, 81, 81, 0.7), #F070FC);
+}
+#uxpDesign::after {
+  content: "";
+  background-image: linear-gradient(0deg, rgba(81, 81, 81, 0.7), #F070FC);
+}
+
+#uxpBuild {
+  background-image: url(../img/bg/bg-build-4.jpg);
+  background-repeat: no-repeat;
+  background-position: 92% 31%;
+  background-size: 1225px 530px;
+}
+#uxpBuild .emphasis {
+  color: #3EF2B2;
+}
+#uxpBuild h2 {
+  background-image: url(../img/icons/headers/build.svg);
+}
+#uxpBuild::before {
+  content: "";
+  background-image: linear-gradient(180deg, rgba(81, 81, 81, 0.7), #3EF2B2);
+}
+#uxpBuild::after {
+  content: "";
+  background-image: linear-gradient(0deg, rgba(81, 81, 81, 0.7), #3EF2B2);
+}
+
+#uxpLaunch {
+  background-image: url(../img/bg/bg-launch-2.jpg);
+  background-repeat: no-repeat;
+  background-position: 1% 11%;
+  background-size: 1387px 600px;
+}
+#uxpLaunch .emphasis {
+  color: #FFD439;
+}
+#uxpLaunch h2 {
+  background-image: url(../img/icons/headers/launch.svg);
+}
+#uxpLaunch .headerMilestonLaunch {
+  margin-top: 0px;
+}
+#uxpLaunch::before {
+  content: "";
+  background-image: linear-gradient(180deg, rgba(81, 81, 81, 0.7), #FFD439);
+}
+#uxpLaunch::after {
+  content: "";
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), #FFD439);
+}/*# sourceMappingURL=custom.css.map */
